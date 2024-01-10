@@ -13,3 +13,5 @@ let isLogged=true   //Boolean
 
 //Object
 
+console.log(typeof null)
+console.log(typeof undefined)
