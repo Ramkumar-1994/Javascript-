@@ -6,7 +6,28 @@
   <title>Data Types</title>
 </head>
 <body>
-  
+  <input type="text">
+  <button onclick="speak()">Speak</button>
+  <div class="container"></div>
   <script src="data.js"></script>
+  <script>
+    let input=document.querySelector("input")
+    let button=document.querySelector("button")
+    let p=document.querySelector("p")
+    let container=document.querySelector(".container")
+    function speak()
+    {
+      const text=input.value
+      const utterance=new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance)
+      let p=document.createElement("h3")
+
+      container.append(p.textContent)
+    }
+  
+    
+    
+    
+  </script>
 </body>
 </html>

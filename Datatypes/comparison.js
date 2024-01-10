@@ -16,3 +16,4 @@ console.log(null>= 0)
 // === strict comparison 
 
 console.log(2>=3)
+
