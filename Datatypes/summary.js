@@ -32,6 +32,7 @@ console.log(id===anotherId)
  
  myFunction()
 
+console.log("apple".toUpperCase())
 
 
 
@@ -45,5 +46,3 @@ console.log(id===anotherId)
 
 
 
-
- 
