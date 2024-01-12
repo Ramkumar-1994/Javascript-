@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: #6592cf;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rectbox {
+      width: 300px;
+      height: 150px;
+      background: #243d83;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bigcircle {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: #6592cf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle {
+      border-radius: 50%;
+      background: #243D83;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ycircle {
+      background: #eeb850;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectbox">
+      <div class="bigcircle">
+        <div class="circle">
+          <div class="ycircle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function p(x)
+    {
+      return function (y)
+{
+      return x+y
+};  }
+
+const m=p(3)
+console.log(m(4))
+  </script>
+</body>
+</html>
